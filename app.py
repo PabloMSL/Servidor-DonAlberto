@@ -26,7 +26,7 @@ def get_registros():
 def gestionar_peritajes():
     if request.method == 'POST':
         datos = request.get_json()
-        nueva_moto = {"placa": datos['placa'], "estado": "Recibida"}
+        nueva_moto = {"placa": datos['placa'].upper(), "estado": "Recibida"}
         peritajes_db.append(nueva_moto)
         return jsonify({"mensaje": "Registro Exitoso", "moto": nueva_moto}), 201
     return jsonify(peritajes_db)
