@@ -1,1 +1,17 @@
+Ini, TOML
+# Ignorar entornos virtuales
 venv/
+ENV/
+
+# Ignorar archivos de cache de ejecucion de python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar bases de datos del usuario
+*.sqlite3
+
+# Ignorar archivos del sistema operativo anfitrion
+.DS_Store
+Thumbs.db
