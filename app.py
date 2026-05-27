@@ -34,3 +34,7 @@ def gestionar_peritajes():
 
 if __name__ == "__main__":
          app.run()
+
+@app.route('/api/inventario', methods=['GET', 'POST'])
+def gestionar_inventario():
+      if request.method == 'POST':
