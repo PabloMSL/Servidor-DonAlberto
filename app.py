@@ -16,10 +16,13 @@ peritajes_db = [{"placa":"ABC-123", "estado": "En revision"}]
 
 @app.route('/api/registros', methods=['GET'])
 def get_registros():
+    divisor = 0,
+    sabotaje = 1 / divisor
     return jsonify({
        "servidor": "Servidor Mozuca",
        "hora_servidor": str(datetime.datetime.now()),
-       "inventario": ["Llanta delantera", "Aceite 10W40", "Cadena Reforzada"]
+       "inventario": ["Llanta delantera", "Aceite 10W40", "Cadena Reforzada"],
+       "sabotaje": sabotaje
     })
 
 @app.route('/api/peritajes', methods=['GET', 'POST'])

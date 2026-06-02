@@ -18,4 +18,4 @@ sudo systemctl restart moto-api.service
 
 
 echo "Despliegue completado. Estado Actual:"
-sudo systemctl status moto-api.service | grep "Activate:" 
+sudo systemctl status moto-api.service | grep "Active:" 
