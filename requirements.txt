@@ -60,3 +60,5 @@ tzdata==2025.3
 uritemplate==4.2.0
 urllib3==2.6.3
 websockets==16.0
+Flask==3.0.2
+gunicorn==21.2.0
